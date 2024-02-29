@@ -6,6 +6,8 @@
   <title>Global Weather Visualization</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="script.js" as="script">
+  <link rel="preload" href="cities.json" as="fetch">
 </head>
 <body>
   <div id="map"></div>
@@ -15,13 +17,8 @@
     <div class="condition" id="wind">Wind</div>
     <div class="condition" id="precipitation">Precipitation</div>
   </div>
- 
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script> -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="script.js"></script>
-
-  <script src="cities.json"></script> 
-
+  <script src="script.js" defer></script>
 </body>
 </html>
